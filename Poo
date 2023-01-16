@@ -1,1 +1,46 @@
-
+fun main() {
+   //POO - Programaçãoa objetios - simular coisas da realidade na programação
+   //
+   //objetos - possui estados( nomes, idades, endereço, altura e etc), comportamento(andar, correr, dormir, comer etc)
+   //a POO é dividido
+   //
+   //classe - são modelos que servem para a construção de objs derivados dele mesmo(Ex Classe pessoa) 
+   //as classes- recebem atributos(os estados)
+   //
+   //metodos - sera as instancias de classe , as formas de agir 
+   //Estrutura de uma classe
+   // class Nome(){ocorridos de obj}
+   /*
+   val ricardo = pessoa()//instanciando um obj
+   ricardo.nome = "Ricardo Emerson Jake"
+    ricardo.altura= 2.15
+    ricardo.CorDosOlhos= "preto"
+    ricardo.peso= 100.0
+   println(ricardo.altura)//para exibir um atributo em especifico
+   */
+    val convidado1 = pessoa("claudio",1.79, "castanho", 183.0)
+    println(convidado1.nome)
+    val convidado2= pessoa("Juliana",1.50,"azul",53.5)
+    println(convidado2.nome)
+    //exercicio: criem um churras e exiba a lista de convidadosno console, no min 6 pessoas
+    val convidado3= pessoa("abel",1.47, "preto",23.50)
+    println(convidado3.nome)
+    val convidado4= pessoa("rédineilson",1.90, "preto",29.30)
+    println(convidado4.nome)
+    val convidado5= pessoa("cleneide",1.60, "azul",40.03)
+    println(convidado5.nome)
+    val convidado6= pessoa("ardecy",2.03, "castanho",20.99)
+    println(convidado6.nome)
+}
+class pessoa(val nome: String, 
+             val altura: Double,
+             val CorDosOlhos: String,
+             val peso: Double){
+    // declarando atributos para a classe \\
+    /* 
+    var nome= ""
+    var altura= 0.0
+    var CorDosOlhos= ""
+    var peso= 0.0
+    */
+}
