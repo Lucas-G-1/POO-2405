@@ -2,8 +2,8 @@ fun main() {
     
     var dinossaro = animal("reptil", 'M',"Terras extremamente antiga", "Carnivoro",397,true)
     //print("meu animal é um " +dinossaro.classe+ " " +dinossaro.dieta+ " e ele mora no "+dinossaro.habitat)
-    dinossaro.Atacar(false)
-} 
+    dinossaro.fomeado(false)} 
+
    //POO - Programaçãoa objetios - simular coisas da realidade na programação
    //
    //objetos - possui estados( nomes, idades, endereço, altura e etc), comportamento(andar, correr, dormir, comer etc)
@@ -58,17 +58,24 @@ class animal(val classe: String,
              val idade: Int,
              val voa: Boolean){
     
-    fun Atacar(bravo: Boolean){
+    /*fun Atacar(bravo: Boolean){
         if(bravo == true){
         println("animal atacando")    
         }else{
             println("animal de boa, suavão")
             
         }
-        
-        
+*/        
+     fun fomeado(faminto: Boolean){
+         if(faminto == true){
+             println("animal caido")
+         }else{
+             println("animal cagando")
+         }
+     }   
     }
-    
-}
+
+    // faça um novo comportamento para seu animal usando uma nova fun
+
 //métodos - Comportamentos da nossa classe, que nossos objetos receberão
 //eles são declarados usando funçoes
