@@ -1,7 +1,8 @@
 fun main() {
     
-    var dinossaro = animal("reptil", 'M',"Terras extremamente antiga", "Calnivoro",397,true)
-    print("meu animal é um " +dinossaro.classe+ " ele é " +dinossaro.dieta+ " e ele mora no "+dinossaro.habitat)
+    var dinossaro = animal("reptil", 'M',"Terras extremamente antiga", "Carnivoro",397,true)
+    //print("meu animal é um " +dinossaro.classe+ " " +dinossaro.dieta+ " e ele mora no "+dinossaro.habitat)
+    dinossaro.Atacar(false)
 } 
    //POO - Programaçãoa objetios - simular coisas da realidade na programação
    //
@@ -57,4 +58,17 @@ class animal(val classe: String,
              val idade: Int,
              val voa: Boolean){
     
+    fun Atacar(bravo: Boolean){
+        if(bravo == true){
+        println("animal atacando")    
+        }else{
+            println("animal de boa, suavão")
+            
+        }
+        
+        
+    }
+    
 }
+//métodos - Comportamentos da nossa classe, que nossos objetos receberão
+//eles são declarados usando funçoes
