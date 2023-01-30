@@ -188,3 +188,45 @@ class ContaDoBanco(var senha: Int, var saldo: Double,
     }
     
 }
+AULA FINAL
+fun main() {
+ 
+    val contaCorrente = ContaDoBanco(4002,1.0,"Safra","Franco Francesco Aguero")
+    
+    contaCorrente.consultarSaldo()
+    contaCorrente.saque(2.0)
+    contaCorrente.consultarSaldo()
+}
+
+class ContaDoBanco(var senha: Int, var saldo: Double, 
+                   var banco: String, var dono:String,){
+    fun consultarSaldo(){
+        println("O saldo da sua conta é R$$saldo")
+    }
+    
+ /*   fun saque(valorSaque: Double){
+        if(valorSaque <=0){
+            println("Impossivel sacar R$$valorSaque")
+        }else if(saldo >= valorSaque){
+            saldo-=valorSaque
+            println("Saque de R$$valorSaque realizado com sucessso")
+        }else{
+            println("saldo insuficiente, saque de R$$valorSaque não reaalizado")
+        }
+   }*/
+    //Exercicio -- Faça um novo método para que possamos deposita dinheiro na conta
+   
+fun saque(valorSaque: Double){
+        if(valorSaque <=0){
+            println("Impossivel depositar R$$valorSaque, ta achando q faço magica é")
+        }else if(saldo <= valorSaque){
+            saldo+=valorSaque
+            println("Deposito de R$$valorSaque realizado com sucessso, parabens você tem dinheiro")
+        }else{
+            println("saldo insuficiente, deposito de R$$valorSaque não realizado, procure um emprego")
+        }
+   }
+   
+   
+}  
+            
