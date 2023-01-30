@@ -194,7 +194,7 @@ fun main() {
     val contaCorrente = ContaDoBanco(4002,1.0,"Safra","Franco Francesco Aguero")
     
     contaCorrente.consultarSaldo()
-    contaCorrente.saque(2.0)
+    contaCorrente.deposito(2.0)
     contaCorrente.consultarSaldo()
 }
 
@@ -216,7 +216,7 @@ class ContaDoBanco(var senha: Int, var saldo: Double,
    }*/
     //Exercicio -- Faça um novo método para que possamos deposita dinheiro na conta
    
-fun saque(valorSaque: Double){
+fun deposito(valorSaque: Double){
         if(valorSaque <=0){
             println("Impossivel depositar R$$valorSaque, ta achando q faço magica é")
         }else if(saldo <= valorSaque){
@@ -226,7 +226,5 @@ fun saque(valorSaque: Double){
             println("saldo insuficiente, deposito de R$$valorSaque não realizado, procure um emprego")
         }
    }
-   
-   
+    
 }  
-            
