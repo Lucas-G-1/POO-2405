@@ -81,7 +81,7 @@ class animal(val classe: String,
 //métodos - Comportamentos da nossa classe, que nossos objetos receberão
 //eles são declarados usando funçoes
 
-
+AULA 2
 fun main() {
    /* 
     var dinossaro = animal("reptil", 'M',"Terras extremamente antiga", "Carnivoro",397,true)
